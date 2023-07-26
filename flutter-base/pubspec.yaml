@@ -1,0 +1,171 @@
+name: ncflutter
+description: A new Flutter module.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+#
+# This version is used _only_ for the Runner app, which is used if you just do
+# a `flutter run` or a `flutter make-host-app-editable`. It has no impact
+# on any other native host app that you embed your Flutter project into.
+version: 3.0.33+3003302
+
+#dart版本
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+intl: any
+
+flutterJson:
+  enable: true
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  rxdart: ^0.27.3
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.4
+  dio: ^4.0.6
+  # 密钥
+  crypto: ^3.0.0
+  cookie_jar: ^3.0.1
+  dio_cookie_manager: ^2.0.0
+  # request sandbox
+  provider: ^6.0.2
+  # path_provider: ^2.0.9
+  shared_preferences: ^2.0.13
+  flutter_easyrefresh: ^2.2.1
+  fluttertoast: ^8.0.3
+  flutter_svg: ^1.0.3
+  html_unescape: ^2.0.0
+  event_bus: ^2.0.0
+  flutter_html: ^3.0.0-alpha.2
+  date_format: ^2.0.6
+  image_picker: ^0.8.5
+  #  union_tabs: ^1.0.0+4
+  scrollable_positioned_list: ^0.2.3
+  # 键盘显示隐藏
+  flutter_keyboard_visibility: ^5.4.0
+  flutter_screenutil: ^5.3.1
+  flutter_slidable: ^0.6.0
+  # Flutter实战中的组件库
+  flukit: ^2.0.0
+  # 虚线框
+  dotted_border: ^2.0.0+2
+  flutter_boost:
+    git:
+      url: 'git@codeup.aliyun.com:6128d2e757e7cd986dfae5ab/app-github/flutter_boost.git'
+      ref: 'v3.0-null-safety-release.1'
+  ncchannel:
+    path: ncchannel/
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_ume: ^0.3.0+1
+  flutter_ume_kit_ui: ^0.3.0+1
+  flutter_ume_kit_device: ^0.3.0
+  flutter_ume_kit_perf: ^0.3.0
+  flutter_ume_kit_show_code: ^0.3.0
+  flutter_ume_kit_console: ^0.3.0
+  flutter_ume_kit_dio: ^0.3.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add Flutter specific assets to your application, add an assets section, 
+  # like this:
+  assets:
+    - images/
+    - images/nowpick/
+    - images/identity/
+    - images/input/
+    - images/zhuanxiang/
+    - images/zhenti/
+    - images/iTest/
+    - images/question/
+    - images/keyword/
+    - images/questionBank/
+    - images/header/
+    - images/talist/
+    - images/company/
+    - images/recommend/
+    - images/itemCommon/
+    - images/resume/
+    - images/program/
+    - images/social/
+    - images/empty/
+    - images/filter/
+    - images/video/
+    - images/message/
+
+  fonts:
+    - family: SanFranciscoText
+      fonts:
+        - asset: assets/fonts/SanFranciscoText-Regular-19.otf
+          weight: 300
+        - asset: assets/fonts/SanFranciscoText-Regular-19.otf
+          weight: 400
+        - asset: assets/fonts/SanFranciscoText-Medium-17.otf
+          weight: 500
+        - asset: assets/fonts/SanFranciscoText-Medium-17.otf
+          weight: 600
+        - asset: assets/fonts/SanFranciscoText-Medium-17.otf
+          weight: 700
+        - asset: assets/fonts/SanFranciscoText-Medium-17.otf
+          weight: 900
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add Flutter specific custom fonts to your application, add a fonts
+  # section here, in this "flutter" section. Each entry in this list should
+  # have a "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+
+  # This section identifies your Flutter project as a module meant for
+  # embedding in a native host app.  These identifiers should _not_ ordinarily
+  # be changed after generation - they are used to ensure that the tooling can
+  # maintain consistency when adding or modifying assets and plugins.
+  # They also do not have any bearing on your native host application's
+  # identifiers, which may be completely independent or the same as these.
+  module:
+    androidX: true
+    androidPackage: com.nowcoder.ncflutter
+    iosBundleIdentifier: com.nowcoder.ncflutter
